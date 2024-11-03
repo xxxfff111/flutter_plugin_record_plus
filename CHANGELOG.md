@@ -1,3 +1,7 @@
+## 1.0.4
+* 修复错误 What went wrong: A problem occurred configuring project ':flutter_plugin_record_plus_plus'.
+  Could not create an instance of type com.android.build.api.variant.impl.LibraryVariantBuilderImpl. Namespace not specified. Specify a namespace in the module's build file. See https://d.android.com/r/tools/upgrade-assistant/set-namespace for information about setting the namespace.
+
 ## 1.0.1
 
 * 录音时长类型修改为 Double（和 iOS 端保持一致）
