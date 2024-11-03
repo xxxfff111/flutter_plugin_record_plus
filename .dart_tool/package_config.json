@@ -176,7 +176,7 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "flutter_plugin_record_plus_plus",
+      "name": "flutter_plugin_record_plus",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.2"
