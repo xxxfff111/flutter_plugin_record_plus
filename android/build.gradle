@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 
 buildscript {
 //    ext.kotlin_version = '1.2.71'
-    ext.kotlin_version = '1.3.50'
+    ext.kotlin_version = '1.5.20'
 
     repositories {
         google()
@@ -31,6 +31,15 @@ android {
     namespace 'record.wilson.flutter.com.flutter_plugin_record'
     compileSdkVersion 29
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'  // 或 '17'，视你需要的版本而定
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -44,8 +53,11 @@ android {
 }
 
 dependencies {
+    //noinspection GradleDependency
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.github.shaoshuai904:RecordWav:1.0.2'
-    implementation "androidx.appcompat:appcompat:1.0.0"
-    implementation 'com.github.adrielcafe:AndroidAudioConverter:0.0.8'
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation ('com.github.adrielcafe:AndroidAudioConverter:0.0.8') {
+        exclude group: 'com.github.adrielcafe', module: 'ffmpeg-android-java'
+    }
 }
