@@ -1,3 +1,6 @@
+## 1.0.6
+* onRequestPermissionsResult update
+
 ## 1.0.5
 * ':flutter_plugin_record_new' -> org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.50 to 1.5.20
 * Could not find com.github.adrielcafe:ffmpeg-android-java:2a627f6ecd.

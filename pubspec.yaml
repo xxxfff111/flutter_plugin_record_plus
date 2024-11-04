@@ -1,7 +1,7 @@
 
 name: flutter_plugin_record_new
 description: The flutter voice recording plug-in,provides the recording animation and the recording successfully returns to the recording file path
-version: 1.0.5
+version: 1.0.6
 #author:  wilson <yxw_android@163.com>
 homepage: https://github.com/fsg-herbie/flutter_plugin_record_plus.git
 #publish_to: none
